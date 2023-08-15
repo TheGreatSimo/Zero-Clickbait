@@ -1,0 +1,33 @@
+{
+  "name" : "Extention for shorts",
+  "description" : "Browser extention to automate scroolling shorts",
+  "version" : "1.0",
+  "manifest_version" : 3,
+  "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+
+  "background" : {
+       "service_worker" : "background.js"
+   },
+
+  "action" : {
+       "default_popup" : "popup/popup.html"
+   },
+
+  "content_scripts": [
+    {
+      "matches": ["https://tinder.com/app/recs"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "permissions": [
+    "activeTab",
+    "scripting"
+    ]
+
+   
+}

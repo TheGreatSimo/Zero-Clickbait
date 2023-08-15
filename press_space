@@ -1,0 +1,31 @@
+// Function to simulate pressing the space key
+function simulateSpaceKeyPress() {
+  const spaceKeyDownEvent = new KeyboardEvent('keydown', {
+    key: ' ',
+    code: 'Space',
+    keyCode: 32,
+    which: 32,
+    bubbles: true,
+  });
+
+  const spaceKeyUpEvent = new KeyboardEvent('keyup', {
+    key: ' ',
+    code: 'Space',
+    keyCode: 32,
+    which: 32,
+    bubbles: true,
+  });
+
+  // Dispatch the keydown event
+  document.dispatchEvent(spaceKeyDownEvent);
+
+  // Simulate a slight delay to mimic keypress
+  setTimeout(() => {
+    // Dispatch the keyup event
+    document.dispatchEvent(spaceKeyUpEvent);
+  }, 100); // Adjust the delay as needed
+}
+
+// Call the function to simulate pressing the space key
+simulateSpaceKeyPress();
+

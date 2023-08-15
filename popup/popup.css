@@ -1,0 +1,42 @@
+body { 
+    width : 400px;
+    margin : 2rem;
+    background-color : #27272e;
+}
+
+#btnStart, #btnStop{
+  justify-content: space-between;
+  margin: 20px; /* Adjust margin as needed */
+}
+
+#btnStart, #btnStop{
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  background : linear-gradient(235deg, #2ecc71, #821515);
+  color: #ffffff;
+  width : 150px;
+  font-size: 16px;
+  border-radius: 15px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+
+
+
+#btnStart, #btnStop{
+  background : linear-gradient(180deg, #821515,#2725a8 );
+}
+
+#mydiv {
+    background-color : green;
+    font-size : 20px;
+    padding : 20px;
+}
+
+h1 {
+    color : #b3b3c4;
+    text-align: center;
+
+}
+
